@@ -63,7 +63,7 @@ document.getElementById('getImagesBtn').addEventListener('click', () => {
   const gallery = document.getElementById('gallery');
   // Show a loading message with animated dots
   let loadingDots = 1;
-  gallery.innerHTML = '<div id="loadingMsg" style="color: black; font-size: 22px; text-align: center; width: 100%; padding: 40px 0;">Loading.</div>';
+  gallery.innerHTML = '<div id="loadingMsg" style="color: white; font-size: 22px; text-align: center; width: 100%; padding: 40px 0;">Loading.</div>';
   // Use setInterval to animate the dots
   const loadingInterval = setInterval(() => {
     loadingDots = (loadingDots % 3) + 1; // Cycle from 1 to 3

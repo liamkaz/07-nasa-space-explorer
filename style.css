@@ -10,18 +10,19 @@
 
 /* Base page styles */
 body {
-  /* Use Inter as the default font */
   font-family: 'Inter', Arial, sans-serif;
-  /* Space themed background: dark gradient with stars */
-  background: linear-gradient(180deg, #0a0a23 0%, #1a1a40 100%);
-  background-image: 
-    repeating-radial-gradient(circle at 20% 30%, #fff 0 1px, transparent 1px 100%),
-    repeating-radial-gradient(circle at 70% 80%, #fff 0 1px, transparent 1px 100%),
-    repeating-radial-gradient(circle at 50% 50%, #fff 0 1px, transparent 1px 100%);
-  background-size: 800px 600px, 1200px 900px, 1000px 700px;
+  background:
+    repeating-radial-gradient(circle at 20% 30%, #ffffff 0 1px, transparent 1px 100%),
+    repeating-radial-gradient(circle at 70% 80%, #ffffff 0 1px, transparent 1px 100%),
+    repeating-radial-gradient(circle at 50% 50%, #ffffff 0 1px, transparent 1px 100%),
+    linear-gradient(180deg, #a6c8ff 0%, #0b3d91 100%);
+  background-size: 800px 600px, 1200px 900px, 1000px 700px, cover;
   background-repeat: repeat;
+  background-attachment: fixed;
   padding: 20px;
 }
+
+
 
 /* Centered container */
 .container {
@@ -146,7 +147,8 @@ button:hover {
   flex: 1 1 100%;
   text-align: center;
   padding: 40px;
-  color: #666;
+  /* color: #666 */
+  color: white;
 }
 
 .placeholder-icon {
