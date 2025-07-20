@@ -24,6 +24,31 @@ const months = {
   12: 'December'
 }
 
+// Sample array of random space facts to display on page load
+const spaceFacts = [
+  "A day on Venus is longer than its year.",
+  "Neutron stars can spin up to 700 times per second.",
+  "The Moon is slowly drifting away from Earth—about 3.8 cm per year.",
+  "There are more stars in the universe than grains of sand on all the Earth's beaches.",
+  "One spoonful of a neutron star would weigh about 6 billion tons.",
+  "Saturn’s rings are made almost entirely of water ice.",
+  "The Great Red Spot on Jupiter is a storm that’s been raging for over 350 years.",
+  "If two pieces of the same type of metal touch in space, they will bond together permanently. (Cold welding)",
+  "The Milky Way galaxy will collide with the Andromeda galaxy in about 4.5 billion years.",
+  "Light from the Sun takes about 8 minutes and 20 seconds to reach Earth.",
+  "Olympus Mons on Mars is the tallest planetary mountain in the solar system.",
+  "The largest volcano in the solar system is on Mars.",
+  "Black holes do not suck; their gravity behaves like any other object of equal mass.",
+  "In space, astronauts' height can increase by up to 2 inches due to spinal decompression.",
+  "There’s a giant cloud of alcohol in space—Sagittarius B2, near the Milky Way’s center."
+];
+
+// Select a random fact
+const randomFact = spaceFacts[Math.floor(Math.random() * spaceFacts.length)];
+
+// Display it in an element
+document.getElementById('space-fact').textContent = randomFact;
+
 // Fetch API data
 document.getElementById('getImagesBtn').addEventListener('click', () => {
   // Get the selected date range from the inputs
@@ -211,5 +236,5 @@ document.getElementById('getImagesBtn').addEventListener('click', () => {
     });
 });
 
-// Fetch the initial image data based on the default date range
+
 
